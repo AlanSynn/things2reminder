@@ -4,7 +4,7 @@ Tests for the ThingsToRemindersMapper module.
 import unittest
 from datetime import datetime
 from pyremindkit import Priority
-from src.things2reminder.mapper import ThingsToRemindersMapper
+from things2reminder.mapper import ThingsToRemindersMapper
 
 
 class TestThingsToRemindersMapper(unittest.TestCase):

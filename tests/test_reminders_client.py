@@ -5,7 +5,7 @@ import unittest
 from unittest.mock import patch, MagicMock
 from datetime import datetime
 from pyremindkit import Priority
-from src.things2reminder.reminders_client import RemindersClient
+from things2reminder.reminders_client import RemindersClient
 
 
 class TestRemindersClient(unittest.TestCase):
@@ -23,7 +23,7 @@ class TestRemindersClient(unittest.TestCase):
         self.mock_default_calendar.name = "Default"
         self.mock_calendars.get_default.return_value = self.mock_default_calendar
 
-        with patch('src.things2reminder.reminders_client.RemindKit', return_value=self.mock_remind_kit):
+        with patch('things2reminder.reminders_client.RemindKit', return_value=self.mock_remind_kit):
             self.client = RemindersClient()
 
     def test_get_calendars(self):

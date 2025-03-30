@@ -3,7 +3,7 @@ Tests for the ThingsClient module.
 """
 import unittest
 from unittest.mock import patch
-from src.things2reminder.things_client import ThingsClient
+from things2reminder.things_client import ThingsClient
 
 
 class TestThingsClient(unittest.TestCase):
